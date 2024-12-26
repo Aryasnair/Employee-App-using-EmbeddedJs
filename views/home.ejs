@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/add">Add Employee</a>
+  </nav>
+  <h1>Employee List</h1>
+  <div class="container">
+    <% if (employees.length > 0) { %>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% employees.forEach(emp => { %>
+            <tr>
+              <td><%= emp.id %></td>
+              <td><%= emp.name %></td>
+              <td><%= emp.designation %></td>
+              <td><%= emp.location %></td>
+              <td><%= emp.salary %></td>
+              <td>
+                <div style="display: flex; gap: 10px;">
+                  <a href="/edit/<%= emp.id %>">
+                    <button type="button" class="edit-btn">Edit</button>
+                  </a>
+                  <form action="/delete/<%= emp.id %>" method="post">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </div>
+              </td>
+              
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p>No employees found!</p>
+    <% } %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    background-image: url('../images/bgImg.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: #f5afaf;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: rgb(37, 35, 35);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #1d1c1c;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f5afaf;
+  }
+  td {
+    background-color: #f8dddd;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
+  form button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  /* styles.css */
+button.edit-btn {
+  background-color: #4CAF50; /* Green color */
+  color: white;              /* Text color */
+  border: none;              /* Remove border */
+  padding: 8px 16px;         /* Padding for size */
+  cursor: pointer;           /* Pointer cursor */
+  border-radius: 5px;        /* Rounded corners */
+}
+
+button.edit-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+button.delete-btn {
+  background-color: #4CAF50; /* Green color */
+  color: white;              /* Text color */
+  border: none;              /* Remove border */
+  padding: 8px 16px;         /* Padding for size */
+  cursor: pointer;           /* Pointer cursor */
+  border-radius: 5px;        /* Rounded corners */
+}
+
+button.delete-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+input[type='text'], input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
